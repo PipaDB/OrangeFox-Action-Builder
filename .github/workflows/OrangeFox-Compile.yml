@@ -52,9 +52,6 @@ jobs:
     permissions:
       contents: write
     steps:
-    - name: Checkout
-      uses: actions/checkout@v5
-              
     - name: Clean-up
       uses: rokibhasansagar/slimhub_actions@main
 
