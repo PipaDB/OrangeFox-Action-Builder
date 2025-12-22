@@ -69,7 +69,10 @@ jobs:
         git clone https://gitlab.com/OrangeFox/misc/scripts.git -b master
         cd scripts
         sudo bash setup/android_build_env.sh
-      
+
+    - name: Maximize build space
+      uses: easimon/maximize-build-space@master
+
     - name: Set-up Manifest
       if: inputs.MANIFEST_BRANCH == '12.1'
       run: |
